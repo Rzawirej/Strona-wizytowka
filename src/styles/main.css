@@ -1,0 +1,24 @@
+@import "./variables.css";
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main-container{
+    font-family: Cairo;
+}
+#background-img{
+    background-image: url("../assets/laptop.jpg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+}
+.hello{
+    width:50%;
+}
