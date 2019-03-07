@@ -3,22 +3,59 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-#main-container{
     font-family: Cairo;
 }
-#background-img{
+#header {
+    position: relative;
+    color: black;
+    display: flex;
+}
+#header::after {
+    content: "";
     background-image: url("../assets/laptop.jpg");
-    position: absolute;
-    left: 0;
-    right: 0;
+    opacity: 0.2;
     top: 0;
+    left: 0;
     bottom: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    position: absolute;
+    z-index: -1;
 }
-.hello{
-    width:50%;
+#header-left{
+    flex: 3;
+}
+#circle-photo{
+    position: absolute;
+    background-color: green;
+}
+#header-right{
+    background-color: rgba(0, 100, 255, 0.65);
+    flex: 2;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.menu{
+    flex: 1 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    right: 5%;
+    justify-self: flex-end;
+
+}
+.socials{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+#content{
+    background-color: gray;
 }
