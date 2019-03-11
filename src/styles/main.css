@@ -37,7 +37,6 @@ body{
     color: white;
     display: flex;
     flex-wrap: wrap;
- 
 }
 .menu{
     flex: 1 100%;
