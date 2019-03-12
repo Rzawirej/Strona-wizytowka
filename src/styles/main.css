@@ -25,14 +25,21 @@ body{
     z-index: -1;
 }
 #header-left{
+    padding: 3em 0em 8em 3em;
     flex: 3;
+}
+#header-left h2{
+    margin-bottom: 0;
+}
+#header-left h3 {
+    margin-top: 0;
 }
 #circle-photo{
     position: absolute;
     background-color: green;
 }
 #header-right{
-    background-color: rgba(0, 100, 255, 0.65);
+    background-color: var(--lightblue);
     flex: 2;
     color: white;
     display: flex;
@@ -51,10 +58,116 @@ body{
     justify-self: flex-end;
 }
 .contact{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: white;
 }
+.button{
+    margin: 0 1em;
+    padding: 0.5em 2.5em;
+    border: thin solid ;
+    border-radius: 2.5em;
+    color: var(--blue);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.button1{
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: white;
+    
+}
+.button1:hover {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.button2:hover {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
 #content{
-    background-color: gray;
+    background-color: var(--lightgray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content .content{
+    background-color: white;
+}
+.portfolio-photo{
+    width: 100%;
+    height: auto;
+}
+.about-me{
+    width:80%;
+    display: flex;
+
+}
+.about-me .left{
+    flex: 1;
+    padding: 1em;
+    margin: 2em 0em;
+    margin-left: 3em;
+}
+.about-me .left h4{
+    margin: 0.85em;
+}
+.about-me .right{
+    flex: 1;
+    border-left: thin solid var(--blue);
+    padding: 1em;
+    margin: 2em 0em;
+    margin-right: 10em;
+}
+#skills{
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: 20em 20em;
+}
+#skills .content {
+    width: 100%;
+}
+#skills .content h6{
+    margin-bottom: 0;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1em;
+    background-color: var(--lightgray);
+    margin-top: 0;
+    border-radius: 1em;
+    outline: none;
+    opacity: 0.7;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.slider::-moz-range-progress {
+    height: 100%;
+    background: var(--blue);
+}
+.slider::-moz-range-thumb {
+    width: 1em;
+    height: 1.1em;
+    border-radius: 50%;
+    background: var(--blue);
+    cursor: pointer;
+}
+#portfolio{
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0em 2em 4em 2em;
+}
+#portfolio .content{
+    width: 90%;
 }

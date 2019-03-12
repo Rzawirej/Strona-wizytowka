@@ -1,3 +1,7 @@
 :root{
     --zmienna: 20;
+    --yellow: rgb(255, 215, 0);
+    --blue: rgba(17, 136, 216, 0.8);
+    --lightblue: rgba(0, 100, 255, 0.65);
+    --lightgray: rgb(231, 230, 230);
 }
