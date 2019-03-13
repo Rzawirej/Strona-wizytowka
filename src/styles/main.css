@@ -56,7 +56,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/src/assets/chessPlayer.jpg");
+    background-image: url("../assets/chessPlayer.jpg");
 }
 #circle-photo{
     position: absolute;
