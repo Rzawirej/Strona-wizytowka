@@ -5,6 +5,10 @@ body{
     box-sizing: border-box;
     font-family: Cairo;
 }
+.blue{
+    color: var(--blueNoO);
+}
+
 #header {
     position: relative;
     color: black;
@@ -25,14 +29,32 @@ body{
     z-index: -1;
 }
 #header-left{
+    position: relative;
     padding: 3em 0em 8em 3em;
     flex: 3;
+}
+#header-left h1 {
+    font-size: 5em;
+    margin-bottom: 0;
 }
 #header-left h2{
     margin-bottom: 0;
 }
 #header-left h3 {
     margin-top: 0;
+}
+#header-left .img{
+    position: absolute;
+    right: -7.5em;
+    top: 7em;
+    z-index: 1;
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/src/assets/chessPlayer.jpg");
 }
 #circle-photo{
     position: absolute;
@@ -48,10 +70,8 @@ body{
 .menu{
     flex: 1 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     right: 5%;
-    justify-self: flex-end;
-
 }
 .socials{
     align-self: flex-end;
@@ -62,18 +82,19 @@ body{
     background-color: white;
 }
 .button{
-    margin: 0 1em;
+    display: inline-block;
+    margin: 0em 1em 1em 1em;
     padding: 0.5em 2.5em;
     border: thin solid ;
     border-radius: 2.5em;
-    color: var(--blue);
+    color: var(--blueNoO);
     font-weight: bold;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 .button1{
-    background-color: var(--blue);
-    border-color: var(--blue);
+    background-color: var(--blueNoO);
+    border-color: var(--blueNoO);
     color: white;
     
 }
@@ -115,7 +136,7 @@ body{
 }
 .about-me .right{
     flex: 1;
-    border-left: thin solid var(--blue);
+    border-left: thin solid var(--blueNoO);
     padding: 1em;
     margin: 2em 0em;
     margin-right: 10em;
@@ -147,19 +168,19 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: var(--blue);
+    background: var(--blueNoO);
     cursor: pointer;
 }
 
 .slider::-moz-range-progress {
     height: 100%;
-    background: var(--blue);
+    background: var(--blueNoO);
 }
 .slider::-moz-range-thumb {
     width: 1em;
     height: 1.1em;
     border-radius: 50%;
-    background: var(--blue);
+    background: var(--blueNoO);
     cursor: pointer;
 }
 #portfolio{
@@ -170,4 +191,59 @@ body{
 }
 #portfolio .content{
     width: 90%;
+}
+.under-photo{
+    padding-left: 1em;
+}
+.under-photo h4{
+    margin-bottom: 0;
+}
+.under-photo h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.under-photo h6 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: gray;
+    line-height: 1;
+}
+#footer{
+    background-color: white;
+    display: flex;
+}
+#footer .left{
+    margin: 1em 0 1em 2em;
+    padding: 1em 2em;
+    color: white;
+    flex: 1;
+    background-color: var(--blueNoO);
+}
+#footer .right{
+    margin: 1em 2em 1em 0;
+    padding: 1em 2em;
+    flex: 4;
+    background-color: var(--lightgray);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+input{
+    background-color: var(--lightgray);
+    width: 100%;
+    border: none;
+    border-bottom: thin solid var(--lightblue);
+}
+@media only screen and (max-width: 937px){
+    #header-left .img {
+        display: none;
+    }
+    #portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu {
+        grid-template-columns: 1fr 1fr;
+    }
 }

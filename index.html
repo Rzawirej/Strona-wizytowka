@@ -14,11 +14,10 @@
         <div id="header">
             <div id="header-left">
                 <h1>Hi there!</h1>
-                <h2>My name is Grzegorz Krawiec</h2>
+                <h2>My name is <span class="blue">Grzegorz Krawiec</span></h2>
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3>
+                <div class="img"></div>
             </div>
-            <div id="circle-photo">
-
             </div>
             <div id="header-right">
                 <div class="menu">
@@ -32,7 +31,6 @@
                     <i class="icon-linkedin-circled"></i>
                     <i class="icon-github-circled"></i>
                     <i class="icon-facebook-circled"></i>
-
                 </div>
             </div>
         </div>
@@ -45,11 +43,11 @@
             <h2>About me</h2>
             <div class="content about-me">
                 <div class="left">
-                    <h4>Full name: Grzegorz Krawiec</h4>
-                    <h4>Age: 21 Years</h4>
-                    <h4>Job: Freelancer</h4>
-                    <h4>Telephone: +48 123-456-789</h4>
-                    <h4>E-mail: krawiec.grzegorz1@gmail.com</h4>
+                    <h4>Full name: <span class="blue">Grzegorz Krawiec</h4>
+                    <h4>Age: <span class="blue">21 Years</span></h4>
+                    <h4>Job: <span class="blue">Freelancer</span></h4>
+                    <h4>Telephone: <span class="blue">+48 123-456-789</span></h4>
+                    <h4>E-mail: <span class="blue">krawiec.grzegorz1@gmail.com</span></h4>
                 </div>
                 <div class="right">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -61,7 +59,7 @@
             <h2>Skills</h2>
             <div id="skills">
                 <div class="content">
-                    <h2>Hard ones</h2>
+                    <h2 style="text-align: center;">Hard <span style="border-bottom: thin solid var(--blueNoO);">ones</span></h2>
                     <h6>html</h6>
                     <input class="slider" step="1" min="0" max="100" value="25" type="range" disabled="disabled">
                     <h6>css</h6>
@@ -70,7 +68,7 @@
                     <input class="slider" step="1" min="0" max="100" value="60" type="range" disabled="disabled">
                 </div>
                 <div class="content">
-                    <h2>Soft ones</h2>
+                    <h2 style="text-align: center;">Soft <span style="border-bottom: thin solid var(--blueNoO);">ones</span></h2>
                     <h6>clapping</h6>
                     <input class="slider" step="1" min="0" max="100" value="85" type="range" disabled="disabled">
                     <h6>dancing</h6>
@@ -83,51 +81,88 @@
             <div id="portfolio">
                 <div class="content">
                     <img src="./src/assets/chess1.jpg" alt="Zdjęcie szachów" class="portfolio-photo"/>
-                    <h4>Chess1</h4>
-                    <h6><a href=#> www.chess1.com</a></h6>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</h6>
+                    <div class="under-photo">
+                        <h4>Chess1</h4>
+                        <h5><a href=#> www.chess1.com</a></h5>
+                        <h6 class="under-photo-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</h6>
+                    </div>
                 </div>
                 <div class="content">
                     <img src="./src/assets/chess2.jpg" alt="Zdjęcie szachów" class="portfolio-photo"/>
-                    <h4>Chess2</h4>
-                    <h6><a href=#> www.chess2.com</a></h6>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</h6>
+                    <div class="under-photo">
+                        <h4>Chess2</h4>
+                        <h5><a href=#> www.chess2.com</a></h5>
+                        <h6 class="under-photo-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</h6>
+                    </div>
                 </div>
                 <div class="content">
                     <img src="./src/assets/chess3.jpg" alt="Zdjęcie szachów" class="portfolio-photo"/>
-                    <h4>Chess3</h4>
-                    <h6><a href=#> www.chess3.com</a></h6>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</h6>
+                    <div class="under-photo">
+                        <h4>Chess3</h4>
+                        <h5><a href=#> www.chess3.com</a></h5>
+                        <h6 class="under-photo-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</h6>
+                    </div>
                 </div>
                 <div class="content">
                     <img src="./src/assets/chess4.jpg" alt="Zdjęcie szachów" class="portfolio-photo"/>
-                    <h4>Chess4</h4>
-                    <h6><a href=#> www.chess4.com</a></h6>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</h6>
+                    <div class="under-photo">
+                        <h4>Chess4</h4>
+                        <h5><a href=#> www.chess4.com</a></h5>
+                        <h6 class="under-photo-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</h6>
+                    </div>
                 </div>
                 <div class="content">
                     <img src="./src/assets/chess5.jpg" alt="Zdjęcie szachów" class="portfolio-photo"/>
-                    <h4>Chess5</h4>
-                    <h6><a href=#> www.chess5.com</a></h6>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</h6>
+                    <div class="under-photo">
+                        <h4>Chess5</h4>
+                        <h5><a href=#> www.chess5.com</a></h5>
+                        <h6 class="under-photo-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</h6>
+                    </div>
                 </div>
                 <div class="content">
                     <img src="./src/assets/chess6.jpg" alt="Zdjęcie szachów" class="portfolio-photo"/>
-                    <h4>Chess6</h4>
-                    <h6><a href=#> www.chess6.com</a></h6>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    <div class="under-photo">
+                        <h4>Chess6</h4>
+                        <h5><a href=#> www.chess6.com</a></h5>
+                        <h6 class="under-photo-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua.</h6>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="contact">
-            <h2>Let me know how can I help you with your projects!</h2>
-            <i class="icon-twitter-circled"></i>
+        <div id="footer">
+           <div class="left">
+                <p>Got a question? I'm here to help you! Send me a message and I will answer you as soon as
+                    possible!</p>
+                <p>Maybe you want to spare with me some of yours delicious food? I'm ready to help you get rid of
+                    it!</p>
+                <div>
+                    <strong>Poland, Wrocław</strong><br>
+                    Lelum 12/3 50-000<br>
+                    +48 123-456-789<br>
+                    krawiec.grzegorz1@gmail.com<br><br>
+                    <div>
+                        <i class="icon icon-twitter-circled"></i>
+                        <i class="icon icon-linkedin-circled"></i>
+                        <i class="icon icon-github-circled"></i>
+                        <i class="icon icon-facebook-circled"></i>
+                    </div>
+           </div>
+         </div>
+         <div class="right">
+                <h2 style="color: var(--lightblue);">Feel free to contact me!</h2>
+                <div class="form">
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="text" placeholder="Your e-mail address"></div>
+                    <div><input type="text" placeholder="What is it about?"></div>
+                    <div><input type="text" placeholder="Message:"></div>
+                </div>
+         </div>
         </div>
     </div>
 </body>
