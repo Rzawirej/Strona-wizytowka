@@ -8,7 +8,9 @@ body{
 .blue{
     color: var(--blueNoO);
 }
-
+.not-link{
+    color: white;
+}
 #header {
     position: relative;
     color: black;
@@ -72,10 +74,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     right: 5%;
+    padding: 1em 1em;
+    text-align: center;
 }
 .socials{
     align-self: flex-end;
     justify-self: flex-end;
+    margin-bottom: 1em;
+    margin-left: 1em;   
 }
 .contact{
     text-align: center;
@@ -172,6 +178,10 @@ body{
     cursor: pointer;
 }
 
+.slider::-webkit-slider-progress {
+    height: 100%;
+    background: var(--blueNoO);
+}
 .slider::-moz-range-progress {
     height: 100%;
     background: var(--blueNoO);
@@ -236,6 +246,13 @@ input{
     border: none;
     border-bottom: thin solid var(--lightblue);
 }
+.copyright{
+    background-color: white;
+    color: gainsboro;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 @media only screen and (max-width: 937px){
     #header-left .img {
         display: none;
@@ -245,5 +262,51 @@ input{
     }
     .menu {
         grid-template-columns: 1fr 1fr;
+    }
+    .about-me .right{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 0.8em;
+        border-left: none;
+        border-top: thin solid var(--blueNoO);
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    #skills {
+        grid-template-columns: 15em 15em;
+    }
+}
+@media only screen and (max-width: 573px) {
+    #portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+    #skills {
+        grid-row-gap: 1em;  
+        grid-template-columns: 15em;
+    }
+    #header-left h1 {
+        font-size: 2em;
+    }
+    #header-left h2 {
+        font-size: 1em;
+    }
+    #header-left h3 {
+        font-size: 0.9em;
+    }
+    #footer{
+        flex-direction: column;
+    }
+    #footer .left {
+        margin: 0;
+    }
+    #footer .right {
+        margin: 0;
+
     }
 }
